@@ -1,0 +1,10 @@
+.venv
+*.pyc
+.DS_Store
+**/*.pyc
+__pycache__
+**/__pycache__
+.vscode
+**/.vscode
+backend/instance/project.db
+secrets.py
