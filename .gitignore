@@ -7,4 +7,4 @@ __pycache__
 .vscode
 **/.vscode
 backend/instance/project.db
-secrets.py
+local_secrets.py

@@ -5,7 +5,7 @@ from database import db, User, Tag, Event, TagLookup
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 from util import get_user_from_context
-from secrets import get_slack_token
+from local_secrets import get_slack_token
 
 # ID of channel you want to post message to
 CHANNEL_ID = "C080FNL0QES"
@@ -44,7 +44,7 @@ def create_event():
 def send_message_to_slack(given_event:Event):
   try:
       # WebClient instantiates a client that can call API methods
-      client = WebClient(token=SLACK_BOT_TOKEN)
+      client = WebClient(token=slack_token)
       logger = logging.getLogger(__name__)
       # Call the conversations.list method using the WebClient
       result = client.chat_postMessage(
