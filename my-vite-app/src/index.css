@@ -70,7 +70,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-.default-button{
-  @apply bg-white rounded-full shadow-sm hover:bg-cyan-600 active:bg-cyan-700 focus:bg-cyan-600 focus:ring focus:outline-none focus:ring-cyan-300
-}
