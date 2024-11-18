@@ -13,7 +13,7 @@ function ToggleButton({value, onToggle}){
     }
     
     return (
-        < button onClick={handleClick} className={isToggled? `${classes['toggled']}`: `${classes['untoggled']}`}>
+        < button onClick={() =>handleClick} className={isToggled? `${classes['toggled']}`: `${classes['untoggled']}`}>
             {value}
         </button>
     );
