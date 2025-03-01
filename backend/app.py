@@ -1,8 +1,10 @@
 from flask import Flask, request
 import database
+from flask_cors import CORS
 from routes import login_route, get_system_tags_route, set_preference_tags_route, get_next_recommended_route, create_event_route, get_user_events_route, get_event_info_route, set_event_engagement_route, get_event_engagement_route
 
 app = Flask(__name__)
+CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 database.db.init_app(app)
 
