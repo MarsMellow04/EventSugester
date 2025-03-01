@@ -9,6 +9,9 @@ import ErrorPage from './components/ErrorPage.jsx';
 import Contact from './components/contact.jsx';
 import EventFetching from './components/EventComponent.tsx';
 
+import EventFininder from './pages/eventFinder.tsx';
+import EventViewer from './pages/eventViewer.tsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,8 +25,13 @@ const router = createBrowserRouter([
   },
   {
     path: "event/:eventId",
-    element: <EventFetching />,
-  }
+    element: <EventViewer/>,
+  },
+  {
+    path: ":userEmail/events",
+    element: <EventFininder />,
+  },
+
   
 ]);
 
