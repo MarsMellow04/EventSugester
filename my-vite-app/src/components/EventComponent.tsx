@@ -75,76 +75,6 @@ export default function EventFetching(eventID: number) {
       
 
     return (
-        // <div className='p-3'>
-        //     < div className='max-w-md mx-auto rounded-xl shadow-md overflow-hidden md: max-w-2xl relative'>
-        //         <div className='Image Name'>
-        //             <img 
-        //                 src={"https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1"}
-        //                 className='aspect-[16/9]  md:w-full h-48'
-        //             />
-        //             <div className='absolute top-5 right-0 p-3'>
-        //                 <button className={`appearance-none rounded-full bg-transparent outline-none `} onClick={() => pressShare(!sharePressed)}>
-        //                     <ShareIcon color={sharePressed? 'red':'none'} />
-        //                 </button>
-        //             </div>  
-        //                 <div className='absolute top-20 right-0 p-3 drop-shadow-md'>
-        //                 <button className={`appearance-none rounded-full bg-transparent `} onClick={() => pressHeart(!heartPressed)}>
-        //                     <HeartIcon color={heartPressed? 'red':'none'} />
-        //                 </button>
-        //             </div>
-        //             <div className='title text-left'>
-        //                 <h2> {data.name} </h2>
-        //             </div>
-        //             <div className='mt-2 flex justify-between Detail Bottom'>
-        //                 <div className='Location'>
-        //                     <p>Location</p>
-        //                 </div>
-        //                 <div className='Made By'>
-        //                     <p> {data.organiser_email} </p>
-        //                 </div>
-        //             </div>
-        //             <div className='Description text-left text-pretty'>
-        //                 <p> {data.description} </p>
-        //             </div>      
-        //         </div>
-        //     </div>
-        // </div>
-
-        // <div className='w-80 group bg-grey rounded-xl shadow-md overflow-hidden flex'>
-        //     <div className='w-full relative flex-none'>
-        //         <div className='h-48 bg-gray-200'/>
-        //         <div className='absolute top-5 right-0 p-3'>
-        //             <button className={`appearance-none rounded-full bg-transparent outline-none `} onClick={() => pressShare(!sharePressed)}>
-        //                 {/* In the future I want this create a popup! */}
-        //                 <ShareIcon color={sharePressed? 'red':'none'} /> 
-        //             </button>
-        //         </div>  
-        //         <div className='absolute top-20 right-0 p-3 drop-shadow-md'>
-        //             <button className={`appearance-none rounded-full bg-transparent `} onClick={() => pressHeart(!heartPressed)}>
-        //                 <HeartIcon color={heartPressed? 'red':'none'} />
-        //             </button>
-        //         </div>
-        //     </div >
-        //     <div className='flex'>
-        //         <div className="uppercase tracking-wide text-red-500 font-semibold">{data.name}</div>
-        //         <div className='flex justify-between'>
-        //             <div className='w-10/12'>
-        //                 <div className='text-left'>
-        //                     <h2 className='text-left font-bold'>{data.organiser_email}</h2>
-        //                     <p className= 'text-small'> IBM Hursley </p>
-        //                 </div>
-        //             </div>
-        //             <div className='w-2/14'>
-        //                 <button className='bg-red-500 text-white p-2 rounded-lg'>Attend</button>
-        //             </div>
-        //         </div>
-        //     {/* <div className='max-h-0 invisible group-hover:max-h-full duration-300 tansition-all group-hover:visible group-focus:visible transform'> */}
-        //     <div className='flex-1 collopase group-hover:visible'>
-        //         <p> {data.description} </p>
-        //     </div>
-        //     </div>
-        // </div>
-        
         <div id='app' className='text-left' >
         <div id='card' className='bg-gray-600 rounded-lg overflow-hidden border w-80 shadow-xl'>
             <div id='imageBloc' className='relative'>
@@ -182,9 +112,5 @@ export default function EventFetching(eventID: number) {
         </div>
         <PopUp openPopUp={openPopup} closePopUp={HandleRemovePopUp} />
         </div>
-
-        
-
-        
     );
 }
