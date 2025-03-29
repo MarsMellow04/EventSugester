@@ -10,6 +10,7 @@ export default {
         '16/9': '16 / 9',
       },
       colors: {
+        'back-black': '#242424',
         'purple-heart': {
         '50': '#f3f1ff',
         '100': '#ebe5ff',

@@ -18,3 +18,14 @@ export const EmptyTag = (): Tag => ({
     id: 0, 
     name: ""
 })
+
+export const EmptyEvent = ({
+    id: 77,
+    name: 'Empty',
+    description: 'Nope',
+    organiser_email: 'ugh',
+    attendees: 11,
+    max_attendees: 11,
+    current_attendees: 11,
+    tags: [EmptyTag()]
+})

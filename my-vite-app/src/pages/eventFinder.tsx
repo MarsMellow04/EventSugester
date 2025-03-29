@@ -57,7 +57,7 @@ export default function EventFinder() {
 
     return (
         <div>
-            {EventComponent(data.id,)}
+            < EventComponent eventID={data.id} />
         </div>
     )
 }

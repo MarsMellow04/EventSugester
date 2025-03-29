@@ -24,13 +24,13 @@ const router = createBrowserRouter([
   //   }]
   },
   {
-    path: "event/:eventId",
+    path: "event/:userEmail",
     element: <EventViewer/>,
   },
-  {
-    path: ":userEmail/events",
-    element: <EventFininder />,
-  },
+  // {
+  //   path: ":userEmail/events",
+  //   element: <EventFininder />,
+  // },
 
   
 ]);
