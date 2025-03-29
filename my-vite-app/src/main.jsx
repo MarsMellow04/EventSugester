@@ -10,7 +10,8 @@ import Contact from './components/contact.jsx';
 import EventFetching from './components/EventComponent.tsx';
 
 import EventFininder from './pages/eventFinder.tsx';
-import EventViewer from './pages/eventViewer.tsx';
+import MyEventViewer from './pages/myEventsViewer.tsx';
+import AllEventViewer from './pages/allEventsViewer.tsx';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
   },
   {
     path: "event/:userEmail",
-    element: <EventViewer/>,
+    element: <MyEventViewer/>,
   },
+  {
+    path: "events/:userEmail",
+    element: <AllEventViewer/>,
+  }
   // {
   //   path: ":userEmail/events",
   //   element: <EventFininder />,

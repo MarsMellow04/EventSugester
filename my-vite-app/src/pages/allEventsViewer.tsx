@@ -1,19 +1,18 @@
 import { Form, json, useLoaderData, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import EventComponent from "../components/EventComponent";
+import EventComponent from "../components/EventComponent.tsx";
 import { Tag, Event, EmptyTag, EmptyEvent } from "../types/common.ts";
-import EventFetching from "../components/EventComponent";
+import EventFetching from "../components/EventComponent.tsx";
 
 // Takes the user's email and finds the next most reccomended event
-export default function EventViewer() {
+export default function AllEventViewer() {
   let params = useParams();
   console.log(params.userEmail);
 
   // TODO: I need to make so it only shows the events that they have signed up for
   const [data, setData] = useState<Event[]>([EmptyEvent]);
   useEffect(() => {
-    let isMounted = true;
-    fetch(`http://127.0.0.1:5000/api/GetUserEvents`, {
+    fetch(`http://127.0.0.1:5000/api/GetAllEvents`, {
       headers: {
         "X-Email": params.userEmail as string,
       },
